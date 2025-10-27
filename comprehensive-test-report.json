@@ -1,0 +1,297 @@
+{
+  "startTime": "2025-10-22T07:56:44.012Z",
+  "tests": [
+    {
+      "name": "livescores_endpoint",
+      "success": true,
+      "message": "Found 9 total matches, 9 live matches",
+      "timestamp": "2025-10-22T07:56:44.039Z",
+      "duration": 25,
+      "data": {
+        "totalMatches": 9,
+        "liveMatches": 9,
+        "responseTime": 25,
+        "source": "cache"
+      }
+    },
+    {
+      "name": "fixtures_live_endpoint",
+      "success": true,
+      "message": "Refresh endpoint returned 9 matches",
+      "timestamp": "2025-10-22T07:56:48.922Z",
+      "duration": 4883,
+      "data": {
+        "totalMatches": 9,
+        "responseTime": 4883,
+        "source": "api-refresh"
+      }
+    },
+    {
+      "name": "data_accuracy_validation",
+      "success": true,
+      "message": "Data accuracy: 100.0% (9/9)",
+      "timestamp": "2025-10-22T07:56:48.931Z",
+      "duration": 9,
+      "data": {
+        "totalMatches": 9,
+        "validMatches": 9,
+        "invalidMatches": 0,
+        "issues": []
+      }
+    },
+    {
+      "name": "cache_freshness_validation",
+      "success": false,
+      "message": "Cache freshness validation failed: socket hang up",
+      "timestamp": "2025-10-22T07:56:54.955Z",
+      "duration": 6023,
+      "error": "socket hang up"
+    },
+    {
+      "name": "adaptive_polling_intervals",
+      "success": true,
+      "message": "Adaptive polling configured for 0 active matches",
+      "timestamp": "2025-10-22T07:56:54.964Z",
+      "duration": 9,
+      "data": {
+        "activeMatches": 0,
+        "totalTrackedMatches": 0,
+        "pollingConfig": {
+          "liveMatches": 25000,
+          "ballByBall": 10000,
+          "upcomingMatches": 300000,
+          "finishedMatches": 600000,
+          "scheduledMatches": 600000,
+          "inactivePolling": 120000
+        },
+        "rateLimiterStatus": {
+          "totalEntities": 5,
+          "limitedEntities": 0,
+          "totalRemaining": 9098,
+          "totalCalls": 74
+        }
+      }
+    },
+    {
+      "name": "rate_limit_monitoring",
+      "success": true,
+      "message": "Rate limit monitoring active for 5 entities",
+      "timestamp": "2025-10-22T07:56:54.999Z",
+      "duration": 5,
+      "data": {
+        "totalEntities": 5,
+        "limitedEntities": 0,
+        "totalRemaining": 9098,
+        "recommendations": []
+      }
+    },
+    {
+      "name": "fallback_mechanisms",
+      "success": false,
+      "message": "Fallback mechanisms test failed: Request failed with status code 503",
+      "timestamp": "2025-10-22T07:56:55.001Z",
+      "duration": 2,
+      "error": "Request failed with status code 503"
+    },
+    {
+      "name": "circuit_breaker",
+      "success": true,
+      "message": "Circuit breaker status: Active",
+      "timestamp": "2025-10-22T07:56:55.002Z",
+      "duration": 1,
+      "data": {
+        "paused": false,
+        "reason": null,
+        "pauseTime": null,
+        "consecutiveFailures": 0,
+        "canResume": false
+      }
+    },
+    {
+      "name": "websocket_connection",
+      "success": false,
+      "message": "WebSocket connection failed: socket hang up",
+      "timestamp": "2025-10-22T07:56:56.007Z",
+      "duration": 1005,
+      "error": "socket hang up"
+    },
+    {
+      "name": "live_updates_flow",
+      "success": true,
+      "message": "Live updates flow: 9 matches, 0 questions in 7ms",
+      "timestamp": "2025-10-22T07:56:56.014Z",
+      "duration": 7,
+      "data": {
+        "matchesCount": 9,
+        "questionsCount": 0,
+        "flowDuration": 7
+      }
+    },
+    {
+      "name": "question_streaming",
+      "success": true,
+      "message": "Question streaming: 0 active questions, 0 ML-enhanced",
+      "timestamp": "2025-10-22T07:56:56.015Z",
+      "duration": 1,
+      "data": {
+        "totalQuestions": 0,
+        "mlEnhancedQuestions": 0,
+        "categories": [],
+        "difficulties": []
+      }
+    },
+    {
+      "name": "data_staleness_prevention",
+      "success": true,
+      "message": "Data staleness check: 0.0 minutes old",
+      "timestamp": "2025-10-22T07:56:56.018Z",
+      "duration": 3,
+      "data": {
+        "dataAgeMinutes": 0.000016666666666666667,
+        "isStale": false,
+        "source": "cache",
+        "hasTimestamp": true,
+        "cacheMetadata": {
+          "timestamp": "2025-10-22T07:56:55.502Z",
+          "ttl": 30,
+          "count": 9,
+          "age": 0
+        }
+      }
+    },
+    {
+      "name": "end_to_end_workflow",
+      "success": true,
+      "message": "End-to-end workflow: 5/5 steps successful in 9ms",
+      "timestamp": "2025-10-22T07:56:56.027Z",
+      "duration": 9,
+      "data": {
+        "totalDuration": 9,
+        "stepResults": {
+          "health_check": {
+            "success": true,
+            "duration": 2,
+            "status": 200
+          },
+          "live_matches": {
+            "success": true,
+            "duration": 3,
+            "status": 200
+          },
+          "monitoring_status": {
+            "success": true,
+            "duration": 1,
+            "status": 200
+          },
+          "rate_limits": {
+            "success": true,
+            "duration": 2,
+            "status": 200
+          },
+          "questions_active": {
+            "success": true,
+            "duration": 1,
+            "status": 200
+          }
+        },
+        "successRate": 100
+      }
+    },
+    {
+      "name": "error_handling",
+      "success": true,
+      "message": "Error handling: 3/3 properly handled",
+      "timestamp": "2025-10-22T07:56:56.034Z",
+      "duration": 7,
+      "data": {
+        "invalid_match_id": {
+          "status": 200,
+          "hasError": false
+        },
+        "invalid_endpoint": {
+          "status": 404,
+          "hasError": false
+        },
+        "invalid_question_id": {
+          "status": 200,
+          "hasError": false
+        }
+      }
+    },
+    {
+      "name": "performance_benchmarks",
+      "success": true,
+      "message": "Performance benchmarks: 100.0% SLA compliance, 2ms average",
+      "timestamp": "2025-10-22T07:56:56.041Z",
+      "duration": 7,
+      "data": {
+        "benchmarks": [
+          {
+            "endpoint": "live_matches",
+            "duration": 2,
+            "success": true,
+            "status": 200
+          },
+          {
+            "endpoint": "monitoring",
+            "duration": 2,
+            "success": true,
+            "status": 200
+          },
+          {
+            "endpoint": "rate_limits",
+            "duration": 1,
+            "success": true,
+            "status": 200
+          },
+          {
+            "endpoint": "questions",
+            "duration": 2,
+            "success": true,
+            "status": 200
+          }
+        ],
+        "averageResponseTime": 1.75,
+        "slaCompliance": 1,
+        "successRate": 1
+      }
+    }
+  ],
+  "summary": {
+    "total": 15,
+    "passed": 12,
+    "failed": 3,
+    "warnings": 0,
+    "successRate": 80
+  },
+  "performance": {
+    "averageResponseTime": 413.8333333333333,
+    "slowestEndpoint": {
+      "name": "fixtures_live_endpoint",
+      "success": true,
+      "message": "Refresh endpoint returned 9 matches",
+      "timestamp": "2025-10-22T07:56:48.922Z",
+      "duration": 4883,
+      "data": {
+        "totalMatches": 9,
+        "responseTime": 4883,
+        "source": "api-refresh"
+      }
+    },
+    "fastestEndpoint": {
+      "name": "question_streaming",
+      "success": true,
+      "message": "Question streaming: 0 active questions, 0 ML-enhanced",
+      "timestamp": "2025-10-22T07:56:56.015Z",
+      "duration": 1,
+      "data": {
+        "totalQuestions": 0,
+        "mlEnhancedQuestions": 0,
+        "categories": [],
+        "difficulties": []
+      }
+    }
+  },
+  "endTime": "2025-10-22T07:56:56.041Z",
+  "totalDuration": 12029
+}

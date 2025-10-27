@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/.6aadfe646ed43ff711eb476bc96bb424d91fd03f-audit.json",
+    "files": [
+        {
+            "date": 1760852833277,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-19.log",
+            "hash": "38eb14e1e19b7edf0017387c4360ddce87fca191b8320979f03632a28a53bc4c"
+        },
+        {
+            "date": 1761024159172,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-21.log",
+            "hash": "6e6203fa77905871d7f86c0e2b799b3b628e93225f3d80bbebab139a0f0667ef"
+        },
+        {
+            "date": 1761108833110,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-22.log",
+            "hash": "fe7ee7df9aa323b2c9c6ae3da38d7b29319ca31d58c58a1fb7ce0e42e1b87754"
+        },
+        {
+            "date": 1761211684258,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-23.log",
+            "hash": "322aafd96fe3ce80670bb5f3f4111495ea20b50fd3ec2eb7f8b1910e46166f5c"
+        },
+        {
+            "date": 1761282085424,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-24.log",
+            "hash": "1eed76cd11459abf7f0a48e8df3bf383e6d63ff711dee5b4e0ac4f32c09d8966"
+        },
+        {
+            "date": 1761371869710,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-25.log",
+            "hash": "85217e6e2f6105a7b3b0c9cc49882a54965dbe38d48c82b7fe233711aaef4a93"
+        },
+        {
+            "date": 1761542402039,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/error-logs-2025-10-27.log",
+            "hash": "af1eae819253419f39da5e74ff90be222a5fb9917a0bb9fe26bea186a7590dc0"
+        }
+    ],
+    "hashType": "sha256"
+}

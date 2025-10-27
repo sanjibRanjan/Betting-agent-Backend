@@ -1,0 +1,91 @@
+{
+  "startTime": "2025-10-22T08:40:49.148Z",
+  "tests": [
+    {
+      "name": "system_health",
+      "success": false,
+      "message": "System health test failed: Error",
+      "timestamp": "2025-10-22T08:40:49.164Z",
+      "duration": 12,
+      "error": "Error"
+    },
+    {
+      "name": "data_processing_status",
+      "success": false,
+      "message": "Data processing status test failed: Error",
+      "timestamp": "2025-10-22T08:40:49.166Z",
+      "duration": 2,
+      "error": "Error"
+    },
+    {
+      "name": "question_generation_pipeline",
+      "success": false,
+      "message": "Question generation pipeline test failed: Error",
+      "timestamp": "2025-10-22T08:40:49.168Z",
+      "duration": 2,
+      "error": "Error"
+    },
+    {
+      "name": "event_detection_system",
+      "success": false,
+      "message": "Event detection system test failed: Error",
+      "timestamp": "2025-10-22T08:40:49.170Z",
+      "duration": 2,
+      "error": "Error"
+    },
+    {
+      "name": "data_flow_validation",
+      "success": false,
+      "message": "Data flow validation: 0/4 steps successful",
+      "timestamp": "2025-10-22T08:40:49.175Z",
+      "duration": 5,
+      "data": {
+        "stepResults": {
+          "api_status": {
+            "success": false,
+            "duration": 0,
+            "error": "Error"
+          },
+          "enhanced_services": {
+            "success": false,
+            "duration": 0,
+            "error": "Error"
+          },
+          "question_service": {
+            "success": false,
+            "duration": 0,
+            "error": "Error"
+          },
+          "active_questions": {
+            "success": false,
+            "duration": 0,
+            "error": "Error"
+          }
+        },
+        "successRate": 0
+      }
+    },
+    {
+      "name": "performance_metrics",
+      "success": false,
+      "message": "Performance metrics test failed: Error",
+      "timestamp": "2025-10-22T08:40:49.179Z",
+      "duration": 4,
+      "error": "Error"
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 0,
+    "failed": 6,
+    "successRate": 0
+  },
+  "pipelineData": {
+    "mockMatches": [],
+    "processedData": {},
+    "questions": [],
+    "events": []
+  },
+  "endTime": "2025-10-22T08:40:49.179Z",
+  "totalDuration": 31
+}

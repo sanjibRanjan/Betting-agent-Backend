@@ -1,0 +1,55 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/.f36e82f5897e7b4e4f848015290c38514c68b9ef-audit.json",
+    "files": [
+        {
+            "date": 1760852833275,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-19.log",
+            "hash": "0565ee23585a785e0baba8629a30a7bc586b420944b98f96b51ad3312bdb4e9a"
+        },
+        {
+            "date": 1760859626348,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-19.log.1",
+            "hash": "dfa21e43623f2fbd34ab16c009a0d8e662c4c43274670524764762f7cacb80ab"
+        },
+        {
+            "date": 1761024159169,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-21.log",
+            "hash": "993a140fdc798ad20c363ed80da30f6c19d6859a0293b5f4b09ead63e7874e17"
+        },
+        {
+            "date": 1761034684215,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-21.log.1",
+            "hash": "e16929feeb9c649208ba3e7daa9151d18cb25eafd421ff8e199572dd509a9e44"
+        },
+        {
+            "date": 1761108833107,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-22.log",
+            "hash": "cab04601578b660c1d1f7f07c0b08fdaf5c65fdd840bc7c4cdd05c68f6ddd608"
+        },
+        {
+            "date": 1761211684255,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-23.log",
+            "hash": "bc9e6333afa2dc6426f7e410ce46662c9639d82763cd8e6ee2b90139d04dcba0"
+        },
+        {
+            "date": 1761282085422,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-24.log",
+            "hash": "c3cdd36bad07f3f0e8969b608f69c79f126171f1819d95d3a95c78e25e9cdbe0"
+        },
+        {
+            "date": 1761371869708,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-25.log",
+            "hash": "7e700664763b924db301e899be40b0024a19163e5902dcf10eea79086e81bd8b"
+        },
+        {
+            "date": 1761542402036,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/cricket-app-2025-10-27.log",
+            "hash": "14a7bdba2e63012b93b52b002b95c9c26e28a4820409f562cac2f7f866d0c2e0"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,261 @@
+{
+  "target_name": "boundary_probability",
+  "task_type": "classification",
+  "timestamp": "2025-10-22T10:54:16.644928",
+  "models": {
+    "logistic_regression": {
+      "best_params": {
+        "C": 0.1,
+        "penalty": "l1",
+        "solver": "liblinear"
+      },
+      "cv_score": 1.0,
+      "cv_scores": {
+        "accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "val_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "feature_importance": {
+        "overBoundaries": 1.250703179449335,
+        "innings": 0.0,
+        "overNumber": 0.0,
+        "__v": 0.0,
+        "overBalls": 0.0,
+        "overExtras": 0.0,
+        "overRuns": 0.0,
+        "overSixes": 0.0,
+        "overWickets": 0.0,
+        "requiredRunRate": 0.0
+      },
+      "training_time": "2025-10-22T10:54:03.657839"
+    },
+    "random_forest": {
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "n_estimators": 50
+      },
+      "cv_score": 1.0,
+      "cv_scores": {
+        "accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "val_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "feature_importance": {
+        "overBoundaries": 0.33541492481554985,
+        "batsmanStats.striker.runs": 0.12123550220937879,
+        "bowlerStats.runs": 0.11961139288523405,
+        "overRuns": 0.07186564656599427,
+        "bowlerStats.economyRate": 0.06370796199472045,
+        "batsmanStats.striker.strikeRate": 0.037222503287862155,
+        "run_rate_ratio": 0.029888146706894096,
+        "bowlerStats.dotBalls": 0.026223875146422087,
+        "batsmanStats.striker.balls": 0.019464349021937354,
+        "bowlerStats.balls": 0.018607668845374407
+      },
+      "training_time": "2025-10-22T10:54:10.837977"
+    },
+    "gradient_boosting": {
+      "best_params": {
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "n_estimators": 50,
+        "subsample": 0.8
+      },
+      "cv_score": 1.0,
+      "cv_scores": {
+        "accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "val_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "feature_importance": {
+        "overBoundaries": 1.0,
+        "bowlerStats.playerId": 4.2308401351003996e-17,
+        "momentum.recentRunRate": 1.4592481021526842e-17,
+        "run_rate_diff": 1.1262653137420047e-17,
+        "runRate": 1.116471702318161e-17,
+        "dataQuality.missingBalls": 9.793611423843519e-18,
+        "batsmanStats.striker.runs": 9.499803081128213e-18,
+        "overBalls": 8.422505824505425e-18,
+        "bowlerStats.economyRate": 5.2885501688754995e-18,
+        "innings": 0.0
+      },
+      "training_time": "2025-10-22T10:54:14.200491"
+    },
+    "xgboost": {
+      "best_params": {
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "n_estimators": 50,
+        "subsample": 0.8
+      },
+      "cv_score": 1.0,
+      "cv_scores": {
+        "accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "val_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "feature_importance": {
+        "overBoundaries": "1.0",
+        "innings": "0.0",
+        "overNumber": "0.0",
+        "__v": "0.0",
+        "overBalls": "0.0",
+        "overExtras": "0.0",
+        "overRuns": "0.0",
+        "overSixes": "0.0",
+        "overWickets": "0.0",
+        "requiredRunRate": "0.0"
+      },
+      "training_time": "2025-10-22T10:54:16.618729"
+    }
+  },
+  "best_model": "logistic_regression",
+  "summary": {
+    "total_models": 4,
+    "best_model": "logistic_regression",
+    "model_comparison": {
+      "logistic_regression": {
+        "validation_score": 1.0,
+        "cv_mean": 1.0
+      },
+      "random_forest": {
+        "validation_score": 1.0,
+        "cv_mean": 1.0
+      },
+      "gradient_boosting": {
+        "validation_score": 1.0,
+        "cv_mean": 1.0
+      },
+      "xgboost": {
+        "validation_score": 1.0,
+        "cv_mean": 1.0
+      }
+    }
+  }
+}

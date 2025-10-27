@@ -1,0 +1,47 @@
+{
+  "name": "sanjib-agent",
+  "version": "0.1.0",
+  "description": "AI Cricket Betting Agent server scaffolding",
+  "main": "server.js",
+  "scripts": {
+    "start": "node start-services.js",
+    "start:fresh": "node start-fresh-sportsbex.js",
+    "start:node-only": "node server.js",
+    "dev": "LOG_LEVEL=debug node server.js",
+    "test": "node test-integration.js",
+    "test:api": "node test-integration.js",
+    "test:production": "node test-production-reliability.js",
+    "test:live": "node test-live-system.js",
+    "simulator": "node live-match-simulator.js",
+    "client": "node socket-client.js",
+    "client:example": "node example-client.js",
+    "client:log": "LOG_TO_FILE=true node socket-client.js"
+  },
+  "keywords": [
+    "cricket",
+    "betting",
+    "ai",
+    "server"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^8.1.0",
+    "json2csv": "^5.0.7",
+    "ml-matrix": "^6.10.4",
+    "mongoose": "^8.0.0",
+    "redis": "^4.6.13",
+    "socket.io": "^4.7.5",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "timestamp": "2025-10-19T08:16:38.413Z",
+  "totalTests": 8,
+  "passedTests": 8,
+  "successRate": 100,
+  "totalDuration": 10074,
+  "results": [
+    {
+      "name": "Health Endpoint",
+      "passed": "healthy",
+      "duration": 14,
+      "details": {
+        "status": "healthy",
+        "service": "Sanjib Agent",
+        "uptime": 119.301957083
+      },
+      "timestamp": "2025-10-19T08:16:28.353Z"
+    },
+    {
+      "name": "Monitoring Status",
+      "passed": true,
+      "duration": 2,
+      "details": {
+        "statusCode": 200,
+        "hasData": true
+      },
+      "timestamp": "2025-10-19T08:16:28.356Z"
+    },
+    {
+      "name": "Monitoring Metrics",
+      "passed": true,
+      "duration": 1,
+      "details": {
+        "statusCode": 200,
+        "hasData": true
+      },
+      "timestamp": "2025-10-19T08:16:28.357Z"
+    },
+    {
+      "name": "System Status",
+      "passed": true,
+      "duration": 1,
+      "details": {
+        "statusCode": 200,
+        "hasData": true
+      },
+      "timestamp": "2025-10-19T08:16:28.358Z"
+    },
+    {
+      "name": "Error Handling",
+      "passed": true,
+      "duration": 1,
+      "details": {
+        "statusCode": 404,
+        "errorHandled": true
+      },
+      "timestamp": "2025-10-19T08:16:28.359Z"
+    },
+    {
+      "name": "Data Persistence",
+      "passed": true,
+      "duration": 27,
+      "details": {
+        "statusCode": 200,
+        "hasStats": true,
+        "connected": true
+      },
+      "timestamp": "2025-10-19T08:16:28.387Z"
+    },
+    {
+      "name": "Alerting System",
+      "passed": true,
+      "duration": 1,
+      "details": {
+        "statusCode": 200,
+        "hasAlerts": true,
+        "alertCount": 0
+      },
+      "timestamp": "2025-10-19T08:16:28.388Z"
+    },
+    {
+      "name": "System Resilience",
+      "passed": true,
+      "duration": 10023,
+      "details": {
+        "totalCycles": 5,
+        "successfulCycles": 5,
+        "successRate": "100.00",
+        "cycleResults": [
+          {
+            "cycle": 1,
+            "duration": 1,
+            "success": true
+          },
+          {
+            "cycle": 2,
+            "duration": 8,
+            "success": true
+          },
+          {
+            "cycle": 3,
+            "duration": 4,
+            "success": true
+          },
+          {
+            "cycle": 4,
+            "duration": 3,
+            "success": true
+          },
+          {
+            "cycle": 5,
+            "duration": 3,
+            "success": true
+          }
+        ]
+      },
+      "timestamp": "2025-10-19T08:16:38.412Z"
+    }
+  ]
+}

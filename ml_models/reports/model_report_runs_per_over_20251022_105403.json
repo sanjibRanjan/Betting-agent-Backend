@@ -1,0 +1,179 @@
+{
+  "target_name": "runs_per_over",
+  "task_type": "regression",
+  "timestamp": "2025-10-22T10:54:03.391720",
+  "models": {
+    "random_forest": {
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "n_estimators": 50
+      },
+      "cv_score": -0.4249226666666665,
+      "cv_scores": {
+        "neg_mean_squared_error": [
+          -0.5331599999999999,
+          -0.07692,
+          -0.7863999999999997,
+          -0.14733333333333343,
+          -0.5807999999999998
+        ],
+        "neg_mean_absolute_error": [
+          -0.40199999999999997,
+          -0.17800000000000002,
+          -0.42400000000000004,
+          -0.31333333333333346,
+          -0.4844444444444443
+        ],
+        "r2": [
+          0.9722457053617908,
+          0.9955511856564488,
+          0.9624809160305343,
+          0.9810571428571428,
+          0.9696485161290322
+        ]
+      },
+      "val_metrics": {
+        "mse": 0.34865,
+        "rmse": 0.590465917729381,
+        "mae": 0.32749999999999996,
+        "r2": 0.9814324110671937
+      },
+      "feature_importance": {
+        "bowlerStats.runs": 0.47624711326176655,
+        "overRuns": 0.407737731494852,
+        "batsmanStats.striker.runs": 0.07453860449107294,
+        "overSixes": 0.009597349248616537,
+        "batsmanStats.striker.strikeRate": 0.006608802358608813,
+        "overBoundaries": 0.005875650678893758,
+        "bowlerStats.economyRate": 0.004836366133595814,
+        "bowlerStats.balls": 0.0029738154262785553,
+        "batsmanStats.striker.playerId": 0.0016270840504589213,
+        "teamBatting": 0.0015914599724304419
+      },
+      "training_time": "2025-10-22T10:53:55.633241"
+    },
+    "gradient_boosting": {
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 5,
+        "n_estimators": 100,
+        "subsample": 0.9
+      },
+      "cv_score": -0.2486946226943374,
+      "cv_scores": {
+        "neg_mean_squared_error": [
+          -0.414903213078878,
+          -0.19330432653358684,
+          -0.21105206708642021,
+          -0.20720919847940117,
+          -0.2170043082934008
+        ],
+        "neg_mean_absolute_error": [
+          -0.3753207068284506,
+          -0.240009717633309,
+          -0.19257651813970417,
+          -0.3088601098817968,
+          -0.30677852064671085
+        ],
+        "r2": [
+          0.9784017067632026,
+          0.9888198770078898,
+          0.9899307219901518,
+          0.9733588173383627,
+          0.9886597748569255
+        ]
+      },
+      "val_metrics": {
+        "mse": 0.06482704010073251,
+        "rmse": 0.25461154746148595,
+        "mae": 0.17462835503668384,
+        "r2": 0.9965475926220537
+      },
+      "feature_importance": {
+        "overRuns": 0.6017706206485275,
+        "bowlerStats.runs": 0.3749986389449171,
+        "batsmanStats.striker.runs": 0.01321017286380473,
+        "batsmanStats.striker.playerId": 0.0046048663607312365,
+        "batsmanStats.striker.strikeRate": 0.0026011934509549968,
+        "totalRuns": 0.000492669930845539,
+        "bowlerStats.dotBalls": 0.00034900869953731896,
+        "bowlerStats.balls": 0.0002963361780046527,
+        "bowlerStats.economyRate": 0.0002806882109480526,
+        "overNumber": 0.00023527121059593926
+      },
+      "training_time": "2025-10-22T10:53:59.478594"
+    },
+    "xgboost": {
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 3,
+        "n_estimators": 200,
+        "subsample": 1.0
+      },
+      "cv_score": -0.22561545316307968,
+      "cv_scores": {
+        "neg_mean_squared_error": [
+          -0.9119246195454082,
+          -0.09997243254064678,
+          -0.10114838803963858,
+          -0.007964847545834524,
+          -0.0070669781438704666
+        ],
+        "neg_mean_absolute_error": [
+          -0.3484147310256958,
+          -0.10019949904526584,
+          -0.10696764166932553,
+          -0.030484133186594892,
+          -0.02813005577061429
+        ],
+        "r2": [
+          0.9525286507264233,
+          0.994217904422172,
+          0.9951742181278799,
+          0.9989759481726784,
+          0.9996306934002236
+        ]
+      },
+      "val_metrics": {
+        "mse": 0.25010341287916404,
+        "rmse": 0.5001034021871518,
+        "mae": 0.12546370089330594,
+        "r2": 0.9866805754738786
+      },
+      "feature_importance": {
+        "overRuns": "0.99185926",
+        "overExtras": "0.008139577",
+        "bowlerStats.economyRate": "4.2919046e-07",
+        "teamBatting": "2.184751e-07",
+        "overBoundaries": "1.9875034e-07",
+        "overBalls": "1.8012251e-07",
+        "overNumber": "1.5740255e-07",
+        "innings": "0.0",
+        "__v": "0.0",
+        "overSixes": "0.0"
+      },
+      "training_time": "2025-10-22T10:54:03.374575"
+    }
+  },
+  "best_model": "gradient_boosting",
+  "summary": {
+    "total_models": 3,
+    "best_model": "gradient_boosting",
+    "model_comparison": {
+      "random_forest": {
+        "validation_score": 0.9814324110671937,
+        "cv_mean": 0.06363949032825587
+      },
+      "gradient_boosting": {
+        "validation_score": 0.9965475926220537,
+        "cv_mean": 0.1501434807569916
+      },
+      "xgboost": {
+        "validation_score": 0.9866805754738786,
+        "cv_mean": 0.21321693922243218
+      }
+    }
+  }
+}

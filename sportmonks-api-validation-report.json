@@ -1,0 +1,962 @@
+{
+  "timestamp": "2025-10-21T10:48:03.383Z",
+  "tests": [
+    {
+      "name": "livescores_basic",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:03.401Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:04 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=e0b2cBw%2Fx9j1akYL73MlcncqWC6LbF1sevE7IgaNaiPT4d0JY9%2BhUrKHTczG5bb7K1hCFi1uW4yUtLDjesTgYPJHSucIFoHcbO5aGD%2BQqa4sGlniDw%3D%3D\"}]}",
+          "cf-ray": "99202e2f9d0a5996-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 935,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "fixtures_live_basic",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/fixtures/live",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04",
+          "include": "venue,localteam,visitorteam"
+        }
+      },
+      "startTime": "2025-10-21T10:48:05.338Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 422",
+        "code": "ERR_BAD_REQUEST",
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "data": {
+          "message": "The given data was invalid.",
+          "errors": {
+            "id": [
+              "The id must be an integer."
+            ]
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:05 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=M7QPQh4QinsKFQukSBjmbSl4LeCn5mEs6NQMbm9056faxc3NT8MZ1Xp3zLmMtNd%2FyXX2I%2FXEvmsDIc620U3qIL27%2BToBcfwSwpOlbSLNWmOaSWcDew%3D%3D\"}]}",
+          "cf-ray": "99202e3accc55996-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 271,
+      "statusCode": 422,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "fixtures_live_detailed",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/fixtures/live",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04",
+          "include": "venue,localteam,visitorteam,lineup,scoreboards,balls,league,season"
+        }
+      },
+      "startTime": "2025-10-21T10:48:06.611Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 422",
+        "code": "ERR_BAD_REQUEST",
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "data": {
+          "message": "The given data was invalid.",
+          "errors": {
+            "id": [
+              "The id must be an integer."
+            ]
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:07 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DWXZYUAx%2FGY2k5v%2FGEKruJfIPk7qZ79HULvLeoNs6Qau3IqVll1lGYsboLhnftBbZJ5Sp%2B9mzCLiNXZPW0SrVnhVxdH8njNeQIaBnGbgy72fOQoz6A%3D%3D\"}]}",
+          "cf-ray": "99202e42b9f55996-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 267,
+      "statusCode": 422,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "fixtures_all_with_filter",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/fixtures",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04",
+          "include": "venue,localteam,visitorteam",
+          "filter": "live"
+        }
+      },
+      "startTime": "2025-10-21T10:48:07.880Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:08 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=feVfbNu13wX0ds03AzyWa61%2BYc9bVImTf1viXLUwaE1a5KNNaxqn%2Bbv1nfvHxwYgpk9dlsQ%2BWneFof7wfY2JOjNVYMnTMSzp6%2BG%2FzSNV4619UutnCQ%3D%3D\"}]}",
+          "cf-ray": "99202e4aa8055996-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 280,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "rate_limit_test_1",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:10.162Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TO9jcIpUGPRPdJuQIvkr9tVDz5zweN3Sjb6L0LpHDY3DGJQVDGPbCixU14y7ukOLj72sgJCi1D%2FtJme9P8d7%2B28Hp6yzLxMifrhB1A%2F2jgnNhtlxUg%3D%3D\"}]}",
+          "cf-ray": "99202e58e95f5996-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 286,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "rate_limit_test_2",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:10.264Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AHSczsc6IkB1pSoXUNWjgWYqzXupWm0mr0NKz%2FuGVO5DczJu2YeSowsjDSKRpSjE9xuDW2bdH68XJscaEW16nxQpP8bCMYRXqaiuihkBmhMWkRPP2g%3D%3D\"}]}",
+          "cf-ray": "99202e59aef125cd-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 288,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "rate_limit_test_3",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:10.368Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wj5njLV10MfbHnQjIZ%2BTmlVy24d%2BIc8rgFllppT1j0Ir3GfGv280i00v%2B6LaWzeUmlTbOBct8IqvxUUMKOA%2B5XDaVk%2F%2FAvUKU2dCZd2CVSUc0Yswww%3D%3D\"}]}",
+          "cf-ray": "99202e5a5c6d8171-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 307,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "rate_limit_test_4",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:10.473Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bHdAyktPPgPOKsRSlgIXzA%2FqPHKVg9kXi7pU9w2xEkxCwi1kvhinH1O%2BhExQS4myMkzSjgACz9OeHTE7%2BkC%2FnX8PaZPVeAeCS%2FuZQ4jqMg3jNH6QGQ%3D%3D\"}]}",
+          "cf-ray": "99202e5ada995996-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 278,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "rate_limit_test_5",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:10.576Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:11 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TJ4ud5dLl2f4jyDaMgk%2BtgpL6nkx5yUr4FzcHoKfEMryr3TNPARqfuxG1hFQnf3F48669zHIghVHMjntCWbTp42wDkipRoUWC3JJoULnDuepJjnIfg%3D%3D\"}]}",
+          "cf-ray": "99202e5b8b5025cd-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 271,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "livescores",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/livescores",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04"
+        },
+        "include": null
+      },
+      "startTime": "2025-10-21T10:48:10.848Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 401",
+        "code": "ERR_BAD_REQUEST",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "data": {
+          "status": "error",
+          "message": {
+            "message": "Unauthenticated"
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:11 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lkwY4k5VKGTkI2cXu8u8nKN2QUz1lz47c8KzgY2DOHcr50UmkFjRgSI9GSC5m2keZYoWnIvKAv8aCqsuUNYIVfc46wsZab0LmUiGlqYFLKl19N4wJA%3D%3D\"}]}",
+          "cf-ray": "99202e5d2f6325cd-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 277,
+      "statusCode": 401,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "fixtures_live",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/fixtures/live",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04",
+          "include": "venue,localteam,visitorteam"
+        }
+      },
+      "startTime": "2025-10-21T10:48:12.268Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 422",
+        "code": "ERR_BAD_REQUEST",
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "data": {
+          "message": "The given data was invalid.",
+          "errors": {
+            "id": [
+              "The id must be an integer."
+            ]
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:12 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dpIW5VOpCEnomn6Vqaezy3HqrxzmHMJf40ABwYRUlvxdVPiEc5yVfCQcIMna2uy0VM4N6ntl36eDmj2erbYOy42m16bO9bi2a9IKwPKNfz437SeVWw%3D%3D\"}]}",
+          "cf-ray": "99202e665cfd25cd-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 303,
+      "statusCode": 422,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    },
+    {
+      "name": "fixtures_live_detailed",
+      "config": {
+        "url": "https://cricket.sportmonks.com/api/v2.0/fixtures/live",
+        "params": {
+          "api_token": "ce185be8-fc29-4d4e-bd10-26f485fa4c04",
+          "include": "venue,localteam,visitorteam,lineup,scoreboards,balls,league,season"
+        }
+      },
+      "startTime": "2025-10-21T10:48:13.572Z",
+      "success": false,
+      "response": null,
+      "error": {
+        "message": "Request failed with status code 422",
+        "code": "ERR_BAD_REQUEST",
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "data": {
+          "message": "The given data was invalid.",
+          "errors": {
+            "id": [
+              "The id must be an integer."
+            ]
+          }
+        },
+        "headers": {
+          "date": "Tue, 21 Oct 2025 10:48:14 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "cache-control": "no-cache, private",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "x-content-type-options": "nosniff",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hCBZKsf2fFKxlJbQshxWKJKOqbQA6Nuh5DAaiuQOnh8x64f3cRfPwm48TnU6sjCMJCJWZ4M%2F%2FVLDHyCZ2rANqZIRXahzfRxpKaT710wsrCCJqk4rxQ%3D%3D\"}]}",
+          "cf-ray": "99202e6e386d25cd-DEL",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        }
+      },
+      "duration": 259,
+      "statusCode": 422,
+      "responseSize": 0,
+      "liveMatchesFound": 0,
+      "fieldsPresent": {},
+      "validationErrors": []
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "passed": 0,
+    "failed": 12,
+    "errors": [
+      {
+        "test": "livescores_basic",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:04 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=e0b2cBw%2Fx9j1akYL73MlcncqWC6LbF1sevE7IgaNaiPT4d0JY9%2BhUrKHTczG5bb7K1hCFi1uW4yUtLDjesTgYPJHSucIFoHcbO5aGD%2BQqa4sGlniDw%3D%3D\"}]}",
+            "cf-ray": "99202e2f9d0a5996-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "fixtures_live_basic",
+        "error": {
+          "message": "Request failed with status code 422",
+          "code": "ERR_BAD_REQUEST",
+          "status": 422,
+          "statusText": "Unprocessable Entity",
+          "data": {
+            "message": "The given data was invalid.",
+            "errors": {
+              "id": [
+                "The id must be an integer."
+              ]
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:05 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=M7QPQh4QinsKFQukSBjmbSl4LeCn5mEs6NQMbm9056faxc3NT8MZ1Xp3zLmMtNd%2FyXX2I%2FXEvmsDIc620U3qIL27%2BToBcfwSwpOlbSLNWmOaSWcDew%3D%3D\"}]}",
+            "cf-ray": "99202e3accc55996-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "fixtures_live_detailed",
+        "error": {
+          "message": "Request failed with status code 422",
+          "code": "ERR_BAD_REQUEST",
+          "status": 422,
+          "statusText": "Unprocessable Entity",
+          "data": {
+            "message": "The given data was invalid.",
+            "errors": {
+              "id": [
+                "The id must be an integer."
+              ]
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:07 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DWXZYUAx%2FGY2k5v%2FGEKruJfIPk7qZ79HULvLeoNs6Qau3IqVll1lGYsboLhnftBbZJ5Sp%2B9mzCLiNXZPW0SrVnhVxdH8njNeQIaBnGbgy72fOQoz6A%3D%3D\"}]}",
+            "cf-ray": "99202e42b9f55996-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "fixtures_all_with_filter",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:08 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=feVfbNu13wX0ds03AzyWa61%2BYc9bVImTf1viXLUwaE1a5KNNaxqn%2Bbv1nfvHxwYgpk9dlsQ%2BWneFof7wfY2JOjNVYMnTMSzp6%2BG%2FzSNV4619UutnCQ%3D%3D\"}]}",
+            "cf-ray": "99202e4aa8055996-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "rate_limit_test_1",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TO9jcIpUGPRPdJuQIvkr9tVDz5zweN3Sjb6L0LpHDY3DGJQVDGPbCixU14y7ukOLj72sgJCi1D%2FtJme9P8d7%2B28Hp6yzLxMifrhB1A%2F2jgnNhtlxUg%3D%3D\"}]}",
+            "cf-ray": "99202e58e95f5996-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "rate_limit_test_2",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AHSczsc6IkB1pSoXUNWjgWYqzXupWm0mr0NKz%2FuGVO5DczJu2YeSowsjDSKRpSjE9xuDW2bdH68XJscaEW16nxQpP8bCMYRXqaiuihkBmhMWkRPP2g%3D%3D\"}]}",
+            "cf-ray": "99202e59aef125cd-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "rate_limit_test_3",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wj5njLV10MfbHnQjIZ%2BTmlVy24d%2BIc8rgFllppT1j0Ir3GfGv280i00v%2B6LaWzeUmlTbOBct8IqvxUUMKOA%2B5XDaVk%2F%2FAvUKU2dCZd2CVSUc0Yswww%3D%3D\"}]}",
+            "cf-ray": "99202e5a5c6d8171-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "rate_limit_test_4",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:10 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bHdAyktPPgPOKsRSlgIXzA%2FqPHKVg9kXi7pU9w2xEkxCwi1kvhinH1O%2BhExQS4myMkzSjgACz9OeHTE7%2BkC%2FnX8PaZPVeAeCS%2FuZQ4jqMg3jNH6QGQ%3D%3D\"}]}",
+            "cf-ray": "99202e5ada995996-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "rate_limit_test_5",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:11 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TJ4ud5dLl2f4jyDaMgk%2BtgpL6nkx5yUr4FzcHoKfEMryr3TNPARqfuxG1hFQnf3F48669zHIghVHMjntCWbTp42wDkipRoUWC3JJoULnDuepJjnIfg%3D%3D\"}]}",
+            "cf-ray": "99202e5b8b5025cd-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "livescores",
+        "error": {
+          "message": "Request failed with status code 401",
+          "code": "ERR_BAD_REQUEST",
+          "status": 401,
+          "statusText": "Unauthorized",
+          "data": {
+            "status": "error",
+            "message": {
+              "message": "Unauthenticated"
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:11 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lkwY4k5VKGTkI2cXu8u8nKN2QUz1lz47c8KzgY2DOHcr50UmkFjRgSI9GSC5m2keZYoWnIvKAv8aCqsuUNYIVfc46wsZab0LmUiGlqYFLKl19N4wJA%3D%3D\"}]}",
+            "cf-ray": "99202e5d2f6325cd-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "fixtures_live",
+        "error": {
+          "message": "Request failed with status code 422",
+          "code": "ERR_BAD_REQUEST",
+          "status": 422,
+          "statusText": "Unprocessable Entity",
+          "data": {
+            "message": "The given data was invalid.",
+            "errors": {
+              "id": [
+                "The id must be an integer."
+              ]
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:12 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dpIW5VOpCEnomn6Vqaezy3HqrxzmHMJf40ABwYRUlvxdVPiEc5yVfCQcIMna2uy0VM4N6ntl36eDmj2erbYOy42m16bO9bi2a9IKwPKNfz437SeVWw%3D%3D\"}]}",
+            "cf-ray": "99202e665cfd25cd-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      },
+      {
+        "test": "fixtures_live_detailed",
+        "error": {
+          "message": "Request failed with status code 422",
+          "code": "ERR_BAD_REQUEST",
+          "status": 422,
+          "statusText": "Unprocessable Entity",
+          "data": {
+            "message": "The given data was invalid.",
+            "errors": {
+              "id": [
+                "The id must be an integer."
+              ]
+            }
+          },
+          "headers": {
+            "date": "Tue, 21 Oct 2025 10:48:14 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "cache-control": "no-cache, private",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "x-content-type-options": "nosniff",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hCBZKsf2fFKxlJbQshxWKJKOqbQA6Nuh5DAaiuQOnh8x64f3cRfPwm48TnU6sjCMJCJWZ4M%2F%2FVLDHyCZ2rANqZIRXahzfRxpKaT710wsrCCJqk4rxQ%3D%3D\"}]}",
+            "cf-ray": "99202e6e386d25cd-DEL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          }
+        }
+      }
+    ]
+  },
+  "analysis": {
+    "apiConnectivity": false,
+    "liveDataAvailable": false,
+    "errorPatterns": {
+      "status400Count": 0,
+      "status429Count": 0,
+      "commonErrors": [
+        {
+          "message": "Request failed with status code 401",
+          "count": 8
+        },
+        {
+          "message": "Request failed with status code 422",
+          "count": 4
+        }
+      ]
+    },
+    "recommendations": [
+      "No live matches found - verify time window and league filters"
+    ]
+  }
+}

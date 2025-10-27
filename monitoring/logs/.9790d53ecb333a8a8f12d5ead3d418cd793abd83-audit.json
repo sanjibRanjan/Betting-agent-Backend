@@ -1,0 +1,55 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/.9790d53ecb333a8a8f12d5ead3d418cd793abd83-audit.json",
+    "files": [
+        {
+            "date": 1760852833276,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-19.log",
+            "hash": "5b047fe1c3455db01f12fe3866c97595626dafefdedfac2b873d2a95a5780099"
+        },
+        {
+            "date": 1760859626353,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-19.log.1",
+            "hash": "df71bd983865f183deb932841b9fd856a94c0f362b4b9664edbfefd1f2f9d274"
+        },
+        {
+            "date": 1761024159172,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-21.log",
+            "hash": "313f2d88492b1ee138c7c8959bd2594a65b176833a30ee582f9b374d8506a809"
+        },
+        {
+            "date": 1761034684217,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-21.log.1",
+            "hash": "1aa72685f6b3190529c3bf208b3ebd3b7504581dcd2c095a2c8f560a2abcc3df"
+        },
+        {
+            "date": 1761108833108,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-22.log",
+            "hash": "326be65921cf11cb13a5903867bae930405ae806758d6754129159aeb2137252"
+        },
+        {
+            "date": 1761211684257,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-23.log",
+            "hash": "1bcbeb987d1b58469df7fd151ead5dfd472e78cd6eff291b294625e83d8d48b3"
+        },
+        {
+            "date": 1761282085424,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-24.log",
+            "hash": "8bcfa8f517f6385bd2587c82a70fe3a56e929829b5b8097e283348a1fb9a9e15"
+        },
+        {
+            "date": 1761371869709,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-25.log",
+            "hash": "b7d5fae0c8a40646b4777f5332455ea21c07dccb5ee2734ea4b3392aaaed2b20"
+        },
+        {
+            "date": 1761542402038,
+            "name": "/Users/sanju007/Downloads/Sanjib Agent/monitoring/logs/api-logs-2025-10-27.log",
+            "hash": "6978ae00b27e73ef79027f1483364ac3bd8eb7e3c9873487aa6c79969810ef90"
+        }
+    ],
+    "hashType": "sha256"
+}

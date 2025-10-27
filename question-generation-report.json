@@ -1,0 +1,538 @@
+{
+  "startTime": "2025-10-22T08:39:16.080Z",
+  "tests": [
+    {
+      "name": "question_service_health",
+      "success": true,
+      "message": "Question service: running status",
+      "timestamp": "2025-10-22T08:39:16.121Z",
+      "duration": 35,
+      "data": {
+        "questionGenerator": {
+          "service": "EnhancedQuestionGenerator",
+          "connected": true,
+          "running": true,
+          "mlServiceHealthy": true,
+          "questionTTL": 7200,
+          "processingInterval": 5000,
+          "processedEventsCount": 7,
+          "templatesCount": 5,
+          "predictionCacheSize": 0,
+          "userInteractionMetricsSize": 0,
+          "status": "running",
+          "timestamp": "2025-10-22T08:39:16.112Z"
+        },
+        "broadcasting": {
+          "service": "QuestionBroadcastingService",
+          "isRunning": true,
+          "connectedClients": 0,
+          "subscribedMatches": 0,
+          "broadcastInterval": 10000,
+          "queuedUpdates": 0,
+          "stats": {
+            "isRunning": true,
+            "connectedClients": 0,
+            "subscribedMatches": 0,
+            "queuedUpdates": 0,
+            "broadcastInterval": 10000
+          },
+          "timestamp": "2025-10-22T08:39:16.112Z"
+        },
+        "mlServiceHealthy": true
+      }
+    },
+    {
+      "name": "get_live_matches",
+      "success": true,
+      "message": "Live matches: 0 matches retrieved",
+      "timestamp": "2025-10-22T08:39:29.069Z",
+      "duration": 12947,
+      "data": {
+        "totalMatches": 0,
+        "liveMatches": 0,
+        "source": "error",
+        "timestamp": "2025-10-22T08:39:29.065Z"
+      }
+    },
+    {
+      "name": "question_service_status",
+      "success": true,
+      "message": "Question service status retrieved successfully",
+      "timestamp": "2025-10-22T08:39:29.074Z",
+      "duration": 4,
+      "data": {
+        "questionGenerator": {
+          "service": "EnhancedQuestionGenerator",
+          "connected": true,
+          "running": true,
+          "mlServiceHealthy": true,
+          "questionTTL": 7200,
+          "processingInterval": 5000,
+          "processedEventsCount": 7,
+          "templatesCount": 5,
+          "predictionCacheSize": 0,
+          "userInteractionMetricsSize": 0,
+          "status": "running",
+          "timestamp": "2025-10-22T08:39:29.072Z"
+        },
+        "broadcasting": {
+          "service": "QuestionBroadcastingService",
+          "isRunning": true,
+          "connectedClients": 0,
+          "subscribedMatches": 0,
+          "broadcastInterval": 10000,
+          "queuedUpdates": 0,
+          "stats": {
+            "isRunning": true,
+            "connectedClients": 0,
+            "subscribedMatches": 0,
+            "queuedUpdates": 0,
+            "broadcastInterval": 10000
+          },
+          "timestamp": "2025-10-22T08:39:29.073Z"
+        },
+        "timestamp": "2025-10-22T08:39:29.073Z"
+      }
+    },
+    {
+      "name": "generate_questions",
+      "success": true,
+      "message": "Question generation: 10 active questions found",
+      "timestamp": "2025-10-22T08:39:29.089Z",
+      "duration": 14,
+      "data": {
+        "totalQuestions": 10,
+        "totalMatches": 2,
+        "categories": [
+          "team_over_prediction",
+          "innings_total_prediction",
+          "multi_over_prediction",
+          "next_over_prediction",
+          "over_prediction",
+          "match_total_prediction",
+          "innings_prediction",
+          "immediate_prediction"
+        ],
+        "difficulties": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "mlEnhanced": 0
+      }
+    },
+    {
+      "name": "question_quality",
+      "success": false,
+      "message": "Question quality: 57.1% quality score",
+      "timestamp": "2025-10-22T08:39:29.090Z",
+      "duration": 0,
+      "data": {
+        "qualityChecks": {
+          "hasQuestionText": 0,
+          "hasCategory": 10,
+          "hasDifficulty": 10,
+          "hasOptions": 0,
+          "hasCorrectAnswer": 0,
+          "hasMetadata": 10,
+          "hasTimestamp": 10
+        },
+        "qualityRate": 57.14285714285714,
+        "totalQuestions": 10,
+        "sampleQuestion": {
+          "category": "team_over_prediction",
+          "difficulty": "easy",
+          "options": 0,
+          "mlEnhanced": false
+        }
+      }
+    },
+    {
+      "name": "question_statistics",
+      "success": true,
+      "message": "Question statistics: 100 questions across 2 matches",
+      "timestamp": "2025-10-22T08:39:29.134Z",
+      "duration": 43,
+      "data": {
+        "totalQuestions": 100,
+        "totalMatches": 2,
+        "categories": {
+          "team_over_prediction": 12,
+          "innings_total_prediction": 12,
+          "multi_over_prediction": 10,
+          "next_over_prediction": 10,
+          "over_prediction": 11,
+          "match_total_prediction": 11,
+          "innings_prediction": 11,
+          "immediate_prediction": 11,
+          "wicket_collapse": 3,
+          "batsman_dismissal": 3,
+          "wicket_count_prediction": 3,
+          "wicket_timing": 3
+        },
+        "difficulties": {
+          "easy": 33,
+          "medium": 39,
+          "hard": 28
+        },
+        "mlEnhanced": 70,
+        "averageConfidence": 0,
+        "recentQuestions": 100
+      }
+    },
+    {
+      "name": "ml_integration_status",
+      "success": true,
+      "message": "ML integration status retrieved successfully",
+      "timestamp": "2025-10-22T08:39:29.140Z",
+      "duration": 6,
+      "data": {
+        "service": "MLPredictionService",
+        "isHealthy": true,
+        "mlServiceUrl": "http://localhost:5001",
+        "lastHealthCheck": "2025-10-22T08:39:06.828Z",
+        "status": "ready",
+        "timestamp": "2025-10-22T08:39:29.137Z"
+      }
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 6,
+    "failed": 1,
+    "successRate": 85.71428571428571
+  },
+  "questionData": {
+    "matches": [],
+    "questions": [
+      {
+        "questionId": "eq_test-match-2_xqzxg0",
+        "questionText": "Will the team score more than X runs in the next over? (Probability: {probability}%)",
+        "eventType": "boundary",
+        "matchId": "test-match-2",
+        "templateId": "Will the team score more than {runs} runs in the next over? (Probability: {probability}%)",
+        "difficulty": "easy",
+        "category": "team_over_prediction",
+        "context": "boundary_impact",
+        "timestamp": "2025-10-22T08:36:12.295Z",
+        "mlEnhanced": false,
+        "mlTarget": "runs_per_over",
+        "predictionWeight": 0.8,
+        "metadata": {
+          "originalEvent": {
+            "type": "boundary",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "easy",
+            "category": "team_over_prediction",
+            "context": "boundary_impact",
+            "mlTarget": "runs_per_over",
+            "predictionWeight": 0.8
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.295Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_n1ymn1",
+        "questionText": "Will the batsman score more than X runs in this innings? (ML Score: {mlScore})",
+        "eventType": "boundary",
+        "matchId": "test-match-2",
+        "templateId": "Will {batsman} score more than {runs} runs in this innings? (ML Score: {mlScore})",
+        "difficulty": "medium",
+        "category": "innings_total_prediction",
+        "context": "boundary_momentum",
+        "timestamp": "2025-10-22T08:36:12.295Z",
+        "mlEnhanced": false,
+        "mlTarget": "runs_per_over",
+        "predictionWeight": 0.6,
+        "metadata": {
+          "originalEvent": {
+            "type": "boundary",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "medium",
+            "category": "innings_total_prediction",
+            "context": "boundary_momentum",
+            "mlTarget": "runs_per_over",
+            "predictionWeight": 0.6
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.295Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_7t3jb",
+        "questionText": "How many boundaries will the batsman hit in the next 5 overs? (Predicted: {predictedBoundaries})",
+        "eventType": "boundary",
+        "matchId": "test-match-2",
+        "templateId": "How many boundaries will {batsman} hit in the next 5 overs? (Predicted: {predictedBoundaries})",
+        "difficulty": "medium",
+        "category": "multi_over_prediction",
+        "context": "boundary_frequency",
+        "timestamp": "2025-10-22T08:36:12.295Z",
+        "mlEnhanced": false,
+        "mlTarget": "runs_per_over",
+        "predictionWeight": 0.7,
+        "metadata": {
+          "originalEvent": {
+            "type": "boundary",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "medium",
+            "category": "multi_over_prediction",
+            "context": "boundary_frequency",
+            "mlTarget": "runs_per_over",
+            "predictionWeight": 0.7
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.295Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_w3lgs0",
+        "questionText": "Will the batsman hit another boundary in the next over? (Confidence: {confidence}%)",
+        "eventType": "boundary",
+        "matchId": "test-match-2",
+        "templateId": "Will {batsman} hit another boundary in the next over? (Confidence: {confidence}%)",
+        "difficulty": "easy",
+        "category": "next_over_prediction",
+        "context": "boundary_follow_up",
+        "timestamp": "2025-10-22T08:36:12.295Z",
+        "mlEnhanced": false,
+        "mlTarget": "boundary_probability",
+        "predictionWeight": 0.8,
+        "metadata": {
+          "originalEvent": {
+            "type": "boundary",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "easy",
+            "category": "next_over_prediction",
+            "context": "boundary_follow_up",
+            "mlTarget": "boundary_probability",
+            "predictionWeight": 0.8
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.295Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_mrwdik",
+        "questionText": "Will the team hit another six before the end of this over? (AI Probability: {probability}%)",
+        "eventType": "six",
+        "matchId": "test-match-2",
+        "templateId": "Will the team hit another six before the end of this over? (AI Probability: {probability}%)",
+        "difficulty": "easy",
+        "category": "over_prediction",
+        "context": "six_frequency",
+        "timestamp": "2025-10-22T08:36:12.292Z",
+        "mlEnhanced": false,
+        "mlTarget": "boundary_probability",
+        "predictionWeight": 0.8,
+        "metadata": {
+          "originalEvent": {
+            "type": "six",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "easy",
+            "category": "over_prediction",
+            "context": "six_frequency",
+            "mlTarget": "boundary_probability",
+            "predictionWeight": 0.8
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.292Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_udyuwk",
+        "questionText": "Will the batsman hit more than X sixes in this match? (Prediction Score: {mlScore})",
+        "eventType": "six",
+        "matchId": "test-match-2",
+        "templateId": "Will {batsman} hit more than {runs} sixes in this match? (Prediction Score: {mlScore})",
+        "difficulty": "hard",
+        "category": "match_total_prediction",
+        "context": "six_tracking",
+        "timestamp": "2025-10-22T08:36:12.292Z",
+        "mlEnhanced": false,
+        "mlTarget": "runs_per_over",
+        "predictionWeight": 0.5,
+        "metadata": {
+          "originalEvent": {
+            "type": "six",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "hard",
+            "category": "match_total_prediction",
+            "context": "six_tracking",
+            "mlTarget": "runs_per_over",
+            "predictionWeight": 0.5
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.292Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_gl6fcf",
+        "questionText": "How many sixes will the batsman hit in the remaining overs? (ML Estimate: {predictedSixes})",
+        "eventType": "six",
+        "matchId": "test-match-2",
+        "templateId": "How many sixes will {batsman} hit in the remaining overs? (ML Estimate: {predictedSixes})",
+        "difficulty": "hard",
+        "category": "innings_prediction",
+        "context": "six_consistency",
+        "timestamp": "2025-10-22T08:36:12.292Z",
+        "mlEnhanced": false,
+        "mlTarget": "runs_per_over",
+        "predictionWeight": 0.6,
+        "metadata": {
+          "originalEvent": {
+            "type": "six",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "hard",
+            "category": "innings_prediction",
+            "context": "six_consistency",
+            "mlTarget": "runs_per_over",
+            "predictionWeight": 0.6
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.292Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_wrvuw4",
+        "questionText": "Will the batsman hit another six in the next 3 balls? (AI Confidence: {confidence}%)",
+        "eventType": "six",
+        "matchId": "test-match-2",
+        "templateId": "Will {batsman} hit another six in the next 3 balls? (AI Confidence: {confidence}%)",
+        "difficulty": "medium",
+        "category": "immediate_prediction",
+        "context": "six_momentum",
+        "timestamp": "2025-10-22T08:36:12.292Z",
+        "mlEnhanced": false,
+        "mlTarget": "boundary_probability",
+        "predictionWeight": 0.9,
+        "metadata": {
+          "originalEvent": {
+            "type": "six",
+            "timestamp": "2025-10-22T07:57:42.171Z"
+          },
+          "template": {
+            "difficulty": "medium",
+            "category": "immediate_prediction",
+            "context": "six_momentum",
+            "mlTarget": "boundary_probability",
+            "predictionWeight": 0.9
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.292Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_mrwdim",
+        "questionText": "Will the team hit another six before the end of this over? (AI Probability: {probability}%)",
+        "eventType": "six",
+        "matchId": "test-match-2",
+        "templateId": "Will the team hit another six before the end of this over? (AI Probability: {probability}%)",
+        "difficulty": "easy",
+        "category": "over_prediction",
+        "context": "six_frequency",
+        "timestamp": "2025-10-22T08:36:12.290Z",
+        "mlEnhanced": false,
+        "mlTarget": "boundary_probability",
+        "predictionWeight": 0.8,
+        "metadata": {
+          "originalEvent": {
+            "type": "six",
+            "timestamp": "2025-10-22T07:57:49.717Z"
+          },
+          "template": {
+            "difficulty": "easy",
+            "category": "over_prediction",
+            "context": "six_frequency",
+            "mlTarget": "boundary_probability",
+            "predictionWeight": 0.8
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.290Z",
+          "version": "2.0"
+        }
+      },
+      {
+        "questionId": "eq_test-match-2_udyuwi",
+        "questionText": "Will the batsman hit more than X sixes in this match? (Prediction Score: {mlScore})",
+        "eventType": "six",
+        "matchId": "test-match-2",
+        "templateId": "Will {batsman} hit more than {runs} sixes in this match? (Prediction Score: {mlScore})",
+        "difficulty": "hard",
+        "category": "match_total_prediction",
+        "context": "six_tracking",
+        "timestamp": "2025-10-22T08:36:12.290Z",
+        "mlEnhanced": false,
+        "mlTarget": "runs_per_over",
+        "predictionWeight": 0.5,
+        "metadata": {
+          "originalEvent": {
+            "type": "six",
+            "timestamp": "2025-10-22T07:57:49.717Z"
+          },
+          "template": {
+            "difficulty": "hard",
+            "category": "match_total_prediction",
+            "context": "six_tracking",
+            "mlTarget": "runs_per_over",
+            "predictionWeight": 0.5
+          },
+          "mlPredictions": null,
+          "generatedAt": "2025-10-22T08:36:12.290Z",
+          "version": "2.0"
+        }
+      }
+    ],
+    "stats": {
+      "totalQuestions": 100,
+      "totalMatches": 2,
+      "categories": {
+        "team_over_prediction": 12,
+        "innings_total_prediction": 12,
+        "multi_over_prediction": 10,
+        "next_over_prediction": 10,
+        "over_prediction": 11,
+        "match_total_prediction": 11,
+        "innings_prediction": 11,
+        "immediate_prediction": 11,
+        "wicket_collapse": 3,
+        "batsman_dismissal": 3,
+        "wicket_count_prediction": 3,
+        "wicket_timing": 3
+      },
+      "difficulties": {
+        "easy": 33,
+        "medium": 39,
+        "hard": 28
+      },
+      "mlEnhanced": 70,
+      "averageConfidence": 0,
+      "recentQuestions": 100
+    }
+  },
+  "endTime": "2025-10-22T08:39:29.140Z",
+  "totalDuration": 13060
+}
